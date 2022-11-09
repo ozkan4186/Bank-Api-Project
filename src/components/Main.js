@@ -1,12 +1,34 @@
-import React from 'react'
-import Coin from './Coin'
+import React from "react";
 
-const Main = () => {
+const Main = ({ data }) => {
+  console.log(data);
   return (
-    <div>
-        <Coin/>
-    </div>
-  )
-}
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        border: "1px solid red",
+        width: "250px",
+        height: "350px",
+      }}
+    >
+      <div>
+        <img src={data.image} width="70px" height="70px" alt={data.symbol} />
+      </div>
 
-export default Main
+      <div className="title">
+        <h1>{data.name}</h1>
+        {data.current_price}
+        <span
+          style={{
+            display: "block",
+          }}
+        >
+          {data?.price_change_percentage_24h}
+        </span>
+      </div>
+    </div>
+  );
+};
+
+export default Main;
