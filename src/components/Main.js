@@ -3,11 +3,11 @@ import React, { memo } from "react";
 const Main = ({ data }) => {
   return (
     <div className="d-flex justify-content-center align-items-center  flex-wrap gap-3 " style={{
-     backgroundColor:"rgb(89, 176, 226)"
+    //  backgroundColor:"rgb(89, 176, 226)"
     }} >
       {data.map((data) => {
         return (
-          <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap "
+          <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap card "
             key={data.id}
             style={{
               display: "flex",
@@ -20,7 +20,7 @@ const Main = ({ data }) => {
               fontSize:"1rem"
             }}
           >
-            <div>
+            <div  >
               <img
                 src={data.image}
                 width="70px"

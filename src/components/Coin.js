@@ -37,7 +37,7 @@ const Coin = () => {
     <div  >
         
       <form className="bg-info"  onSubmit={handleSearch}>
-         <h1> Code Fraternity Crypto </h1>
+         <h1 className="fs-1 fw-bold" > Code Fraternity Crypto </h1>
         <input
           type="search"
           value={text}
@@ -51,13 +51,13 @@ const Coin = () => {
         <button className="btn btn-danger p-3" type="submit">Search</button>
       </form>
       <div className="d-flex  justify-content-center align-items-center gap-2 flex-wrap"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          gap: "2rem",
-        }}
+        // style={{
+          // display: "flex",
+          // alignItems: "center",
+          // justifyContent: "center",
+          // flexWrap: "wrap",
+          // gap: "2rem",
+        // }}
       >
         <Main data={filtredSearch} key={filtredSearch.id} />
       </div>
