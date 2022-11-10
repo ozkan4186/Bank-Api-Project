@@ -34,16 +34,19 @@ const Coin = () => {
   //     getApi();
   //   }, 10000);
   return (
-    <div>
-      <form onSubmit={handleSearch}>
+    <div  >
+      <form  onSubmit={handleSearch}>
         <input
           type="search"
           value={text}
           onChange={(e) => setText(e.target.value)}
+          style={{
+            borderRadius:"10px"
+          }}
         />
-        <button type="submit">Search</button>
+        <button className="btn btn-danger" type="submit">Search</button>
       </form>
-      <div
+      <div className="d-flex  justify-content-center align-items-center gap-2 flex-wrap"
         style={{
           display: "flex",
           alignItems: "center",

@@ -2,17 +2,22 @@ import React, { memo } from "react";
 
 const Main = ({ data }) => {
   return (
-    <div>
+    <div className="d-flex justify-content-center align-items-center border border-danger flex-wrap gap-3 " style={{
+     
+    }} >
       {data.map((data) => {
         return (
-          <div
+          <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap "
             key={data.id}
             style={{
               display: "flex",
               flexDirection: "column",
-              border: "1px solid red",
+              // border: "1px solid red",
               width: "250px",
               height: "350px",
+              backgroundColor:"aqua",
+              borderRadius:"10px",
+              fontSize:"1rem"
             }}
           >
             <div>
