@@ -35,16 +35,20 @@ const Coin = () => {
   //   }, 10000);
   return (
     <div  >
-      <form  onSubmit={handleSearch}>
+        
+      <form className="bg-info"  onSubmit={handleSearch}>
+         <h1> Code Fraternity Crypto </h1>
         <input
           type="search"
           value={text}
           onChange={(e) => setText(e.target.value)}
           style={{
-            borderRadius:"10px"
+            borderRadius:"10px",
+            padding:"1rem 2rem"
           }}
         />
-        <button className="btn btn-danger" type="submit">Search</button>
+     
+        <button className="btn btn-danger p-3" type="submit">Search</button>
       </form>
       <div className="d-flex  justify-content-center align-items-center gap-2 flex-wrap"
         style={{

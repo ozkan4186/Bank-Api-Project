@@ -2,8 +2,8 @@ import React, { memo } from "react";
 
 const Main = ({ data }) => {
   return (
-    <div className="d-flex justify-content-center align-items-center border border-danger flex-wrap gap-3 " style={{
-     
+    <div className="d-flex justify-content-center align-items-center  flex-wrap gap-3 " style={{
+     backgroundColor:"rgb(89, 176, 226)"
     }} >
       {data.map((data) => {
         return (
@@ -31,7 +31,9 @@ const Main = ({ data }) => {
 
             <div className="title">
               <h1>{data.name}</h1>$ {data.current_price}
+            
               <span
+              
                 style={{
                   display: "block",
                 }}
@@ -41,6 +43,7 @@ const Main = ({ data }) => {
               <p
                 style={{
                   textAlign: "center",
+                  color:"red"
                 }}
               >
                 Market Cap Rs <br />
