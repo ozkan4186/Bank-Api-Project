@@ -2,25 +2,25 @@ import React, { memo } from "react";
 
 const Main = ({ data }) => {
   return (
-    <div className="d-flex justify-content-center align-items-center  flex-wrap gap-3 " style={{
-    //  backgroundColor:"rgb(89, 176, 226)"
-    }} >
+    <div className="d-flex justify-content-center align-items-center flex-wrap gap-3 ">
       {data.map((data) => {
         return (
-          <div className="d-flex justify-content-center align-items-center gap-2 flex-wrap card "
+          <div
+            className="d-flex justify-content-center align-items-center gap-2 flex-wrap card "
             key={data.id}
             style={{
               display: "flex",
               flexDirection: "column",
               // border: "1px solid red",
+
               width: "250px",
               height: "350px",
-              backgroundColor:"aqua",
-              borderRadius:"10px",
-              fontSize:"1rem"
+              // backgroundColor:"aqua",
+              borderRadius: "10px",
+              fontSize: "1rem",
             }}
           >
-            <div  >
+            <div>
               <img
                 src={data.image}
                 width="70px"
@@ -31,9 +31,7 @@ const Main = ({ data }) => {
 
             <div className="title">
               <h1>{data.name}</h1>$ {data.current_price}
-            
               <span
-              
                 style={{
                   display: "block",
                 }}
@@ -43,7 +41,7 @@ const Main = ({ data }) => {
               <p
                 style={{
                   textAlign: "center",
-                  color:"red"
+                  color: "red",
                 }}
               >
                 Market Cap Rs <br />
